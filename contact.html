@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Web Developers</title>
+    
+</head>
+<body>
+  <div id="container">
+   <div id="title">
+    <h1><span class="blue">Blue</span> Developer Directory</h1>
+    <h2>Find A Developer<span class="now-text"> Now</span></h2> 
+   </div>
+   <div id="title-bar">
+       <ul>
+           <li><a href="project1.html"><span class="home">Home</span></a></li>
+           <li><a href="about-us.html">About Us</a></li>
+           <li><a href="browse.html">Browse Developers</a></li>
+           <li><a href="contact.html">Contact Us</a></li>
+       </ul>
+   </div>
+   <div id="left-menu">
+      <h2>Links</h2>
+      <ul>
+          <li><a href="#">Seo</a></li>
+          <li><a href="#">Php</a></li>
+          <li><a href="#">Ajax</a></li>
+          <li><a href="#">iQuery</a></li>
+          <li><a href="#">Web design</a></li>
+          <li><a href="#">Web programming</a></li>
+          <li><a href="#">Content creation</a></li>
+          <li><a href="#">Internet marketing</a></li>
+          <li><a href="#">XHTML templates</a></li>
+      </ul>
+       
+   </div>
+   
+       <div id="content">
+       
+           <h3><strong>Contact Us</strong></h3>
+       <p>please use this form to contact a member of our website team.</p>
+       <form method="post" action="somescript.php">
+       
+       <label for="name">Full Name:</label>
+       <input type="text" placeholder=" type your name" name="name">
+       
+       <br><br>
+       
+       <label for="email">Email Address:</label>
+       <input type="email" name="email" placeholder=" type your email">
+       
+       <br><br>
+       
+       <label for="phone number">Phone Number:</label>
+       <input type="number" name="phone number" placeholder=" type your phone">
+       
+       <br><br>
+       
+       <label for="location">Location:</label>
+       <input list="location" name="location" placeholder=" type your location">
+       <datalist id="location">
+           <option value="CAiro"></option>
+           <option value="Alex"></option>
+           <option value="Giza"></option>
+           <option value="Sinai"></option>
+           <option value="Luxor"></option>
+       </datalist>
+         <br><br>
+             <fieldset>
+              <legend class="lege">About Your Project</legend>
+           <label for="radio">Best Time To Call:</label>
+           <input type="radio" name="time" value="1">Morning
+           <input type="radio" name="time" value="2">Noon
+           <input type="radio" name="time" value="3">Evening
+       
+       <br><br>
+       
+       
+       <label for="option">Budget:</label>
+       <input type="range" name="rangeInput" min="0" max="10000" onchange="rangeChange(this.value);">
+       <input id="rangetext" type="text" >
+    
+          <br><br>
+       
+       
+    
+       <label for="checkbox">Services Needed: (Check all that apply)</label>
+        <br><br>
+        <table>
+            <tr>
+                <td><input  type="checkbox" name="service" value="html">Html</td>
+                <td><input  type="checkbox" name="service" value="php">Php</td>
+            </tr>
+        
+            <tr>    
+                <td><input  type="checkbox" name="service" value="asp">Asp</td>
+                <td><input  type="checkbox" name="service" value="asp">Java</td>
+            </tr>
+        
+            <tr>
+                <td><input  type="checkbox" name="service" value="c++">C++</td>
+                <td><input  type="checkbox" name="service" value="design">Design</td>
+            </tr>
+        </table>
+       
+       <br><br>
+       
+       <label for="site">Currwnt Website:</label>
+       <input type="url" name="website">
+       
+       <br><br>
+       
+       <label for="date">Start Date:</label>
+       <input type="date" name="start">
+       
+       <br><br>
+       
+       <label for="number">Number Of Page:</label>
+       <input type="number" name="pages">
+       
+       <br><br>
+       
+       <label for="color">Main Color Of Site:</label>
+       <input type="color" name="color">
+       </fieldset>
+       <br><br>
+       
+       <input type="submit" value="Submit Inquiry">
+       
+       </form>
+      
+        
+      </div>
+ 
+    </div>
+    <script type="text/javascript">
+           function rangeChange(val){
+            document.getElementById("rangetext").value=val;
+           }
+       </script>
+    </body>
+</html>

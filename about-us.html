@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Web Developers</title>
+    
+</head>
+<body>
+  <div id="container">
+   <div id="title">
+    <h1><span class="blue">Blue</span> Developer Directory</h1>
+    <h2>Find A Developer<span class="now-text"> Now</span></h2> 
+   </div>
+   <div id="title-bar">
+       <ul>
+           <li><a href="project1.html"><span class="home">Home</span></a></li>
+           <li><a href="about-us.html">About Us</a></li>
+           <li><a href="browse.html">Browse Developers</a></li>
+           <li><a href="contact.html">Contact Us</a></li>
+       </ul>
+   </div>
+   <div id="left-menu">
+      <h2>Links</h2>
+      <ul>
+          <li><a href="#">Seo</a></li>
+          <li><a href="#">Php</a></li>
+          <li><a href="#">Ajax</a></li>
+          <li><a href="#">iQuery</a></li>
+          <li><a href="#">Web design</a></li>
+          <li><a href="#">Web programming</a></li>
+          <li><a href="#">Content creation</a></li>
+          <li><a href="#">Internet marketing</a></li>
+          <li><a href="#">XHTML templates</a></li>
+      </ul>
+       
+   </div>
+      <div id="content">
+        <h2>Blue Developer Directory! </h2>
+       	<h3>Who Are We?</h3>
+        <p>We are a fictional website and service that list top web developers around the world. Search and browse fictional web developers on our website absolutley FREE!</p>
+		<h3>What Skills Do Our Developers Have?</h3>
+        <p>Our listed fictional web developers skill ranges from Graphic design with Photoshop, Illustrator and Fireworks to markup languages like HTML5, XHTML and XML to programming languages such as Javascript, PHP, Python and ASP</p>
+    </div>
+       <video id="ad" width="500px" height="350px" style="margin-left:10px;" src="video/ad.mp4" controls></video>
+    
+      <div style="position:relative; left:530px; letter-spacing:10px;">
+          <button onclick="play()">Play</button>
+          <button onclick="big()">Big</button>
+          <button onclick="small()">Small</button>
+          <button onclick="normal()">Normal</button>
+      </div>
+  <br>
+  <br>
+  <br>
+ 
+    </div>
+    
+    <script>
+        var video = document.getElementById("ad");
+        function play(){
+            if (video.paused){
+                video.play();}
+            else {
+                video.pause();} 
+        }
+        
+        function big(){
+            video.width=560;
+        }
+        
+        function small(){
+            video.width=320;
+        }
+        
+        function normal(){
+            video.width=420;
+        } 
+    
+    
+    </script>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </body>
+</html>
